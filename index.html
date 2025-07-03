@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Munaver Vp</title>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Munaver Vp</title>
+  <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -240,140 +239,124 @@
         }
     </style>
 </head>
-
 <body>
-    <script>
-        function AboutButton() {
-            document.querySelector(".heading").innerHTML = "About Me";
-            text1 = "Hello! I'm Munaver VP, a passionate and self-taught Flutter developer with a strong interest in mobile app UI development and creative coding. With a background in BCom and a deep curiosity for technology, I’ve explored areas like rooting Android devices, custom ROMs, and JavaScript programming.";
-            text2 = " I enjoy solving problems and building efficient, user-friendly mobile applications. Even though my academic path had challenges, I’ve grown through self-learning, consistent experimentation, and a commitment to improve every day. I believe in learning by doing — from flashing ROMs to writing clean Dart code.";
-            document.getElementById('parag').innerHTML = text1 + " <br> <br> " + text2;
-            document.querySelector('.serv').style.display = "none";
-        }
+  <script>
+    function AboutButton() {
+      document.querySelector(".heading").innerHTML = "About Me";
+      let text1 = "Hello! I'm Munaver VP, a passionate and self-taught Flutter developer with a strong interest in mobile app UI development and creative coding. With a background in BCom and a deep curiosity for technology, I’ve explored areas like rooting Android devices, custom ROMs, and JavaScript programming.";
+      let text2 = " I enjoy solving problems and building efficient, user-friendly mobile applications. Even though my academic path had challenges, I’ve grown through self-learning, consistent experimentation, and a commitment to improve every day. I believe in learning by doing — from flashing ROMs to writing clean Dart code.";
+      document.getElementById('parag').innerHTML = text1 + " <br> <br> " + text2;
+      document.querySelector('.serv').style.display = "none";
+      document.getElementById("scrollTarget").scrollIntoView({ behavior: 'smooth' });
+    }
 
-        function WorkButton() {
-            document.querySelector(".heading").innerHTML = "Work";
-            document.getElementById('parag').innerHTML = "";
-            document.querySelector('.serv').style.display = "flex";
-        }
+    function WorkButton() {
+      document.querySelector(".heading").innerHTML = "Work";
+      document.getElementById('parag').innerHTML = "";
+      document.querySelector('.serv').style.display = "flex";
+      document.getElementById("scrollTarget").scrollIntoView({ behavior: 'smooth' });
+    }
 
-        function SkillButton() {
-            document.querySelector(".heading").innerHTML = "Skills";
-            document.getElementById('parag').innerHTML = `
-                <div class="skills">
-                    <div class="sbox"><h3>HTML</h3></div>
-                    <div class="sbox"><h3>CSS</h3></div>
-                    <div class="sbox"><h3>JavaScript</h3></div>
-                    <div class="sbox"><h3>Dart</h3></div>
-                </div>
-            `;
-            document.querySelector('.serv').style.display = "none";
-        }
-
-        function ContactButton() {
-            document.querySelector(".heading").innerHTML = "Contact";
-            document.getElementById('parag').innerHTML = `
-                <form style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 20px; animation: fadeIn 1s;">
-                    <div>
-                        <label style="color:white; font-weight:600;">Enter your name</label><br>
-                        <input type="text" placeholder="Name" style="width: 100%; padding: 15px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px;">
-                    </div>
-                    <div>
-                        <label style="color:white; font-weight:600;">Enter your email</label><br>
-                        <input type="email" placeholder="Email" style="width: 100%; padding: 15px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px;">
-                    </div>
-                    <div>
-                        <label style="color:white; font-weight:600;">Your Message</label><br>
-                        <textarea placeholder="Type your message here..." rows="5" style="width: 100%; padding: 15px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px;"></textarea>
-                    </div>
-                    <button type="submit" style="background-color: #666; color: white; padding: 10px 25px; border: none; border-radius: 30px; font-size: 16px; align-self: center;">Submit</button>
-                </form>
-            `;
-            document.querySelector('.serv').style.display = "none";
-        }
-    </script>
-
-    <div id="main_container">
-        <div id="first_container">
-            <img src="images/munaver_dp.jpg" alt="Profile Photo">
-            <h3>Munaver Vp</h3>
-            <div class="myJob">Software Developer</div>
-            <hr>
-            <div class="info_area">
-                <div class="logo_design">
-                    <img class="logo" src="images/mail.png">
-                    <p>EMAIL : munavervpoffcial@gmail.com</p>
-                </div>
-                <div class="logo_design">
-                    <img class="logo" src="images/phone.png">
-                    <p>PHONE : 8075650229</p>
-                </div>
-                <div class="logo_design">
-                    <img class="logo" src="images/calender.png">
-                    <p>BIRTHDAY : 25/02/2002</p>
-                </div>
-                <div class="logo_design">
-                    <img class="logo" src="images/location2.png">
-                    <p>LOCATION : Vengara, Malappuram, India</p>
-                </div>
-                <div class="social_media">
-    <a href="https://www.instagram.com/munavervp" target="_blank">
-        <img src="images/insta.jpg" alt="Instagram">
-    </a>
-    <a href="https://www.facebook.com/" target="_blank">
-        <img src="images/facebook.png" alt="Facebook">
-    </a>
-    <a href="https://www.twitter.com/" target="_blank">
-        <img src="images/twitter.jpeg" alt="Twitter">
-    </a>
-    <a href="https://www.linkedin.com/in/" target="_blank">
-        <img src="images/linkdin.jpg" alt="LinkedIn">
-    </a>
-    <a href="https://github.com/" target="_blank">
-        <img src="images/github.png" alt="GitHub">
-    </a>
-</div>
-
-            </div>
+    function SkillButton() {
+      document.querySelector(".heading").innerHTML = "Skills";
+      document.getElementById('parag').innerHTML = `
+        <div class="skills">
+          <div class="sbox"><h3>HTML</h3></div>
+          <div class="sbox"><h3>CSS</h3></div>
+          <div class="sbox"><h3>JavaScript</h3></div>
+          <div class="sbox"><h3>Dart</h3></div>
         </div>
+      `;
+      document.querySelector('.serv').style.display = "none";
+      document.getElementById("scrollTarget").scrollIntoView({ behavior: 'smooth' });
+    }
 
-        <div class="second_container">
-            <div class="topbar">
-                <div class="heading">About Me</div>
-                <button class="first_Button" onclick='AboutButton()'>About</button>
-                <button onclick='WorkButton()'>Work</button>
-                <button onclick='SkillButton()'>Skills</button>
-                <button class="last_Button" onclick='ContactButton()'>Contact</button>
-            </div>
-            <div class="main_body">
-                <div class="para">
-                    <p id="parag">
-                        Hello! I'm Munaver VP, a passionate and self-taught Flutter developer with a strong interest in
-                        mobile app UI development and creative coding. With a background in BCom and a deep curiosity
-                        for technology, I’ve explored areas like rooting Android devices, custom ROMs, and JavaScript
-                        programming.
-                        <br><br>
-                        I enjoy solving problems and building efficient, user-friendly mobile applications.
-                        Even though my academic path had challenges, I’ve grown through self-learning, consistent
-                        experimentation, and a commitment to improve every day. I believe in learning by doing — from
-                        flashing ROMs to writing clean Dart code.
-                    </p>
-                </div>
-                <div class="serv">
-                    <div class="box1">
-                        <h1>EaseMyTrip Clone</h1>
-                        <img class="mYtrip" src="images/trip.jpg">
-                        <p>EaseMyTrip Clone is a travel booking application that allows users to search and book flights
-                            easily. It includes key features such as user authentication, flight search with filters,
-                            booking confirmation, and payment integration using Razorpay or Stripe. The app provides a
-                            smooth user interface and was developed using technologies like Flutter (or web tools).
-                            Through this project, I gained hands-on experience in API integration, user management, and
-                            building real-time booking systems.</p>
-                    </div>
-                </div>
-            </div>
+    function ContactButton() {
+      document.querySelector(".heading").innerHTML = "Contact";
+      document.getElementById('parag').innerHTML = `
+        <form style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 20px; animation: fadeIn 1s;">
+          <div>
+            <label style="color:white; font-weight:600;">Enter your name</label><br>
+            <input type="text" placeholder="Name" style="width: 100%; padding: 15px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px;">
+          </div>
+          <div>
+            <label style="color:white; font-weight:600;">Enter your email</label><br>
+            <input type="email" placeholder="Email" style="width: 100%; padding: 15px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px;">
+          </div>
+          <div>
+            <label style="color:white; font-weight:600;">Your Message</label><br>
+            <textarea placeholder="Type your message here..." rows="5" style="width: 100%; padding: 15px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px;"></textarea>
+          </div>
+          <button type="submit" style="background-color: #666; color: white; padding: 10px 25px; border: none; border-radius: 30px; font-size: 16px; align-self: center;">Submit</button>
+        </form>
+      `;
+      document.querySelector('.serv').style.display = "none";
+      document.getElementById("scrollTarget").scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <div id="main_container">
+    <div id="first_container">
+      <img src="images/munaver_dp.jpg" alt="Profile Photo" />
+      <h3>Munaver Vp</h3>
+      <div class="myJob">Software Developer</div>
+      <hr />
+      <div class="info_area">
+        <div class="logo_design">
+          <img class="logo" src="images/mail.png" />
+          <p>EMAIL : munavervpoffcial@gmail.com</p>
         </div>
+        <div class="logo_design">
+          <img class="logo" src="images/phone.png" />
+          <p>PHONE : 8075650229</p>
+        </div>
+        <div class="logo_design">
+          <img class="logo" src="images/calender.png" />
+          <p>BIRTHDAY : 25/02/2002</p>
+        </div>
+        <div class="logo_design">
+          <img class="logo" src="images/location2.png" />
+          <p>LOCATION : Vengara, Malappuram, India</p>
+        </div>
+        <div class="social_media">
+          <a href="https://www.instagram.com/munavervp" target="_blank"><img src="images/insta.jpg" alt="Instagram" /></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+          <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.jpeg" alt="Twitter" /></a>
+          <a href="https://www.linkedin.com/in/" target="_blank"><img src="images/linkdin.jpg" alt="LinkedIn" /></a>
+          <a href="https://github.com/" target="_blank"><img src="images/github.png" alt="GitHub" /></a>
+        </div>
+      </div>
     </div>
-</body>
 
+    <div class="second_container">
+      <div class="topbar">
+        <div class="heading">About Me</div>
+        <button onclick="AboutButton()">About</button>
+        <button onclick="WorkButton()">Work</button>
+        <button onclick="SkillButton()">Skills</button>
+        <button onclick="ContactButton()">Contact</button>
+      </div>
+
+      <!-- 🟡 This is where scroll will land on -->
+      <div class="main_body" id="scrollTarget">
+        <div class="para">
+          <p id="parag">
+            Hello! I'm Munaver VP, a passionate and self-taught Flutter developer with a strong interest in mobile app UI development and creative coding. With a background in BCom and a deep curiosity for technology, I’ve explored areas like rooting Android devices, custom ROMs, and JavaScript programming.
+            <br /><br />
+            I enjoy solving problems and building efficient, user-friendly mobile applications. Even though my academic path had challenges, I’ve grown through self-learning, consistent experimentation, and a commitment to improve every day. I believe in learning by doing — from flashing ROMs to writing clean Dart code.
+          </p>
+        </div>
+        <div class="serv">
+          <div class="box1">
+            <h1>EaseMyTrip Clone</h1>
+            <img class="mYtrip" src="images/trip.jpg" />
+            <p>
+              EaseMyTrip Clone is a travel booking application that allows users to search and book flights easily. It includes key features such as user authentication, flight search with filters, booking confirmation, and payment integration using Razorpay or Stripe. The app provides a smooth user interface and was developed using technologies like Flutter (or web tools). Through this project, I gained hands-on experience in API integration, user management, and building real-time booking systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
