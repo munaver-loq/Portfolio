@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammed Munaver V P - High Performance Flutter & Django Developer Portfolio">
+    <meta name="keywords" content="Mohammed Munaver V P, Flutter Developer, Dart, Django, Mobile App Developer, Portfolio, Kerala">
+    <meta name="author" content="Mohammed Munaver V P">
+    <title>Mohammed Munaver V P | Flutter & Mobile App Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Devicon for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+    <!-- Custom Cursor Glow Follower -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Ambient Glowing Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content container">
+            <a href="#home" class="logo">
+                <span class="logo-code">&lt;</span>Munaver<span class="logo-dot">.</span><span class="logo-code">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#experience" class="nav-item">Experience</a></li>
+                <li><a href="#certifications" class="nav-item">Certificates</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="nav-cta-wrapper">
+                <a href="#contact" class="btn btn-primary btn-nav"><i class="fas fa-paper-plane"></i> Let's Talk</a>
+                <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <div class="hero-status-pill">
+                    <span class="pulse-beacon"></span>
+                    <span>Available for Opportunities & Internships</span>
+                </div>
+                <h1 class="name">Mohammed Munaver <span class="gradient-text">V P</span></h1>
+                <div class="role-wrapper">
+                    <span class="role-static">I build</span>
+                    <span class="role-typed" id="typedText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="bio">
+                    Specialized in developing production-ready, fluid cross-platform mobile apps using <strong>Flutter & Dart</strong>, backed by scalable <strong>Django REST APIs</strong>. Passionate about clean architecture, state management (Riverpod/BLoC), and crafting intuitive user experiences.
+                </p>
+                
+                <div class="hero-tech-pills">
+                    <span class="tech-pill">
+                        <svg class="flutter-svg" viewBox="0 0 24 24" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#54c5f8" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37z"/>
+                            <path fill="#29b6f6" d="M14.328 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.372z"/>
+                            <path fill="#02569b" d="M14.328 11.072l3.23 3.234-3.23 3.235-3.23-3.235 3.23-3.234z"/>
+                        </svg>
+                        Flutter
+                    </span>
+                    <span class="tech-pill"><i class="fas fa-code"></i> Dart</span>
+                    <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
+                    <span class="tech-pill"><i class="fas fa-server"></i> Django</span>
+                    <span class="tech-pill"><i class="fas fa-database"></i> PostgreSQL / SQLite</span>
+                    <span class="tech-pill"><i class="fas fa-network-wired"></i> RESTful APIs</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-laptop-code"></i> View Projects</a>
+                    <a href="resume.pdf" download="Munaver_Resume.pdf" class="btn btn-secondary"><i class="fas fa-file-download"></i> Get Resume</a>
+                </div>
+
+                <!-- Key Metrics Bar -->
+                <div class="hero-metrics">
+                    <div class="metric-item">
+                        <span class="metric-number">1+</span>
+                        <span class="metric-label">Years Hands-On Dev</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-number">100%</span>
+                        <span class="metric-label">Clean Responsive Code</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-number">Certified</span>
+                        <span class="metric-label">Flutter Specialist</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Avatar with Floating Tech Badges -->
+            <div class="hero-image fade-in-left">
+                <div class="profile-card-wrapper">
+                    <div class="profile-glow-ring"></div>
+                    <div class="image-wrapper">
+                        <img src="profile.png" alt="Mohammed Munaver V P" onerror="this.src='https://via.placeholder.com/400x400/0f172a/3b82f6?text=Munaver'">
+                    </div>
+                    <!-- Floating Badge Top Right -->
+                    <div class="floating-badge badge-top-right">
+                        <div class="badge-icon flutter-icon">
+                            <svg class="flutter-svg" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#54c5f8" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37z"/>
+                                <path fill="#29b6f6" d="M14.328 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.372z"/>
+                                <path fill="#02569b" d="M14.328 11.072l3.23 3.234-3.23 3.235-3.23-3.235 3.23-3.234z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Flutter Dev</strong>
+                            <span>Cross-Platform</span>
+                        </div>
+                    </div>
+                    <!-- Floating Badge Bottom Left -->
+                    <div class="floating-badge badge-bottom-left">
+                        <div class="badge-icon django-icon"><i class="fab fa-python"></i></div>
+                        <div>
+                            <strong>Django & REST</strong>
+                            <span>Secure Backend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Bridging seamless mobile interfaces with robust, reliable backend services.</p>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Bio Card -->
+                <div class="about-content glass-card fade-in-up delay-1">
+                    <div class="about-intro">
+                        <h3>Hi, I'm Mohammed Munaver V P</h3>
+                        <p>
+                            A passionate <strong>Flutter & Django Developer</strong> based in Malappuram, Kerala. Certified from <strong>Techno Dot Academy of R&D&I</strong>, I specialize in architecting mobile applications that combine fluid UI performance with clean, modular logic.
+                        </p>
+                        <p>
+                            My approach centers on <em>Clean Code</em>, reliable state management (Riverpod/BLoC), and seamless RESTful API communication. I thrive in agile development workflows and continuously explore cutting-edge mobile technologies to deliver impactful digital solutions.
+                        </p>
+                    </div>
+
+                    <div class="about-details-list">
+                        <div class="detail-row">
+                            <span class="detail-label"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                            <span class="detail-value">Malappuram, Kerala, India</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label"><i class="fas fa-graduation-cap"></i> Degree:</span>
+                            <span class="detail-value">B.Com in Computer Applications (Calicut University)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label"><i class="fas fa-certificate"></i> Certification:</span>
+                            <span class="detail-value">Flutter App Development (Techno Dot Academy)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label"><i class="fas fa-language"></i> Spoken Languages:</span>
+                            <span class="detail-value">English, Malayalam</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Value Pillars -->
+                <div class="pillars-grid fade-in-up delay-2">
+                    <div class="pillar-card glass-card">
+                        <div class="pillar-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>Cross-Platform Apps</h4>
+                        <p>Building high-performance native apps for Android & iOS from a single Dart codebase.</p>
+                    </div>
+                    <div class="pillar-card glass-card">
+                        <div class="pillar-icon"><i class="fas fa-cubes"></i></div>
+                        <h4>Clean Architecture</h4>
+                        <p>Structured codebases utilizing Riverpod, BLoC, and repository patterns for scalability.</p>
+                    </div>
+                    <div class="pillar-card glass-card">
+                        <div class="pillar-icon"><i class="fas fa-server"></i></div>
+                        <h4>RESTful APIs</h4>
+                        <p>Developing secure, fast endpoints with Django REST Framework and PostgreSQL.</p>
+                    </div>
+                    <div class="pillar-card glass-card">
+                        <div class="pillar-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h4>Pixel-Perfect UI/UX</h4>
+                        <p>Translating modern Figma concepts into interactive, responsive screens with dark mode.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section-padding" id="skills">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-tag">Core Competencies</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">The tools, languages, and frameworks I use to build scalable products.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Mobile Development -->
+                <div class="skill-category glass-card fade-in-up delay-1">
+                    <div class="category-header">
+                        <div class="category-icon mobile-grad">
+                            <svg class="flutter-svg" viewBox="0 0 24 24" width="26" height="26" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#ffffff" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37z"/>
+                                <path fill="#ffffff" d="M14.328 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.372z"/>
+                                <path fill="#ffffff" opacity="0.85" d="M14.328 11.072l3.23 3.234-3.23 3.235-3.23-3.235 3.23-3.234z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Mobile & Frontend</h3>
+                            <span>Cross-Platform Engineering</span>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">
+                            <svg class="flutter-svg" viewBox="0 0 24 24" width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#54c5f8" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37z"/>
+                                <path fill="#29b6f6" d="M14.328 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.372z"/>
+                                <path fill="#02569b" d="M14.328 11.072l3.23 3.234-3.23 3.235-3.23-3.235 3.23-3.234z"/>
+                            </svg>
+                            Flutter SDK
+                        </span>
+                        <span class="tag"><i class="fas fa-code"></i> Dart Language</span>
+                        <span class="tag"><i class="fas fa-sitemap"></i> Riverpod / BLoC</span>
+                        <span class="tag"><i class="fas fa-palette"></i> Material 3 / UI Design</span>
+                        <span class="tag"><i class="fas fa-mobile"></i> Android & iOS UI</span>
+                        <span class="tag"><i class="fas fa-magic"></i> Custom Animations</span>
+                        <span class="tag"><i class="fas fa-database"></i> SQLite / Hive Storage</span>
+                        <span class="tag"><i class="fas fa-network-wired"></i> REST Client Integration</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="skill-category glass-card fade-in-up delay-2">
+                    <div class="category-header">
+                        <div class="category-icon backend-grad"><i class="fab fa-python"></i></div>
+                        <div>
+                            <h3>Backend & Database</h3>
+                            <span>Scalable Architecture</span>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag"><i class="fab fa-python"></i> Python 3</span>
+                        <span class="tag"><i class="fas fa-server"></i> Django Framework</span>
+                        <span class="tag"><i class="fas fa-cloud"></i> Django REST Framework</span>
+                        <span class="tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="tag"><i class="fas fa-table"></i> SQLite Database</span>
+                        <span class="tag"><i class="fas fa-key"></i> JWT Authentication</span>
+                        <span class="tag"><i class="fas fa-fire"></i> Firebase Basics</span>
+                        <span class="tag"><i class="fas fa-shield-alt"></i> CORS & Security</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Professional Workflow -->
+                <div class="skill-category glass-card fade-in-up delay-3">
+                    <div class="category-header">
+                        <div class="category-icon tools-grad"><i class="fas fa-tools"></i></div>
+                        <div>
+                            <h3>Tools & Workflow</h3>
+                            <span>Modern Development Process</span>
+                        </div>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag"><i class="fab fa-git-alt"></i> Git Version Control</span>
+                        <span class="tag"><i class="fab fa-github"></i> GitHub Workflows</span>
+                        <span class="tag"><i class="fas fa-terminal"></i> VS Code & Studio</span>
+                        <span class="tag"><i class="fas fa-paper-plane"></i> Postman API Testing</span>
+                        <span class="tag"><i class="fab fa-figma"></i> Figma UI Translation</span>
+                        <span class="tag"><i class="fas fa-check-double"></i> Problem Solving</span>
+                        <span class="tag"><i class="fas fa-users"></i> Team Collaboration</span>
+                        <span class="tag"><i class="fas fa-bolt"></i> Agile & Clean Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section-padding" id="projects">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-tag">Portfolio Showcase</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world applications delivering reliable mobile and backend functionality.</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters fade-in-up delay-1">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="mobile">Mobile & Desktop</button>
+                <button class="filter-btn" data-filter="backend">Backend & API</button>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1: Flagship Fingerprint Attendance System -->
+                <div class="project-card glass-card fade-in-up delay-1" data-category="mobile">
+                    <div class="project-header-bar">
+                        <span class="project-badge flagship-badge"><i class="fas fa-star"></i> Flagship Project</span>
+                        <span class="project-type"><i class="fas fa-fingerprint"></i> Desktop & Mobile</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fingerprint Attendance Management System</h3>
+                        <p class="project-desc">
+                            A production-grade biometric attendance tracking system developed with a cross-platform Flutter desktop/mobile frontend and a secure Django REST API backend with PostgreSQL.
+                        </p>
+                        <div class="project-features">
+                            <h4><i class="fas fa-check-circle"></i> Key Architecture:</h4>
+                            <ul>
+                                <li>Biometric Hardware Scanner Integration & Verification</li>
+                                <li>Student & Staff Registration with Role-Based Access</li>
+                                <li>Automated Attendance Logging & Timestamp Tracking</li>
+                                <li>RESTful API Endpoints with Django & PostgreSQL</li>
+                                <li>Real-Time Analytics & Report Generation Dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django REST</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Biometrics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/munaver-loq" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fab fa-github"></i> View Repository</a>
+                            <a href="#contact" class="btn btn-secondary btn-sm"><i class="fas fa-info-circle"></i> Request Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: FinTrack Mobile App -->
+                <div class="project-card glass-card fade-in-up delay-2" data-category="mobile">
+                    <div class="project-header-bar">
+                        <span class="project-badge mobile-badge"><i class="fas fa-mobile-alt"></i> Mobile App</span>
+                        <span class="project-type"><i class="fas fa-wallet"></i> Finance</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>FinTrack - Personal Finance & Expense Manager</h3>
+                        <p class="project-desc">
+                            An offline-first mobile application designed for budgeting, intuitive expense tracking, and spending pattern analytics with interactive graphical charts.
+                        </p>
+                        <div class="project-features">
+                            <h4><i class="fas fa-check-circle"></i> Key Architecture:</h4>
+                            <ul>
+                                <li>State Management powered by Riverpod with MVVM structure</li>
+                                <li>Offline-first local SQLite persistence for instant response</li>
+                                <li>Interactive spending breakdown pie charts and bar trends</li>
+                                <li>Category-wise expense limits with warning threshold alerts</li>
+                                <li>Fluid dark mode theme and clean Material 3 design</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Riverpod</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">FL Chart</span>
+                            <span class="tech-tag">Material 3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/munaver-loq" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fab fa-github"></i> View Repository</a>
+                            <a href="#contact" class="btn btn-secondary btn-sm"><i class="fas fa-code-branch"></i> Architecture</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Nexus REST API -->
+                <div class="project-card glass-card fade-in-up delay-3" data-category="backend">
+                    <div class="project-header-bar">
+                        <span class="project-badge backend-badge"><i class="fas fa-server"></i> Backend Service</span>
+                        <span class="project-type"><i class="fas fa-shield-alt"></i> REST API</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Nexus REST API - Auth & Resource Management</h3>
+                        <p class="project-desc">
+                            A high-security backend microservice designed for multi-client mobile apps, featuring JWT token authentication, granular permissions, and PostgreSQL storage.
+                        </p>
+                        <div class="project-features">
+                            <h4><i class="fas fa-check-circle"></i> Key Architecture:</h4>
+                            <ul>
+                                <li>Custom JWT Token Pair (Access + Refresh) rotation</li>
+                                <li>Role-Based Access Control (RBAC) & permission policies</li>
+                                <li>Relational database schema with optimized PostgreSQL queries</li>
+                                <li>Complete Swagger/Postman automated API test suites</li>
+                                <li>CORS configuration ready for cross-platform clients</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Django REST</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">SimpleJWT</span>
+                            <span class="tech-tag">Postman</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/munaver-loq" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fab fa-github"></i> View Repository</a>
+                            <a href="#contact" class="btn btn-secondary btn-sm"><i class="fas fa-file-alt"></i> API Docs</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="timeline-section section-padding" id="experience">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My professional training, hands-on internship, and academic background.</p>
+            </div>
+
+            <div class="timeline-container">
+                
+                <!-- Experience Column -->
+                <div class="timeline-column">
+                    <h3 class="timeline-col-title fade-in-up"><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="timeline fade-in-up delay-1">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date-chip">04/2026 – 05/2026</span>
+                                <h3>Software Development Intern</h3>
+                                <h4>Febno Technologies <span class="loc-text">• Malappuram</span></h4>
+                                <ul class="timeline-bullets">
+                                    <li>Assisted in real-world software development activities and feature implementation.</li>
+                                    <li>Collaborated within professional agile workflows, code reviews, and team environments.</li>
+                                    <li>Strengthened practical understanding of production application architecture and debugging.</li>
+                                    <li>Acquired valuable industry exposure to client project lifecycles and team collaboration.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Column -->
+                <div class="timeline-column">
+                    <h3 class="timeline-col-title fade-in-up"><i class="fas fa-graduation-cap"></i> Education & Certifications</h3>
+                    <div class="timeline fade-in-up delay-2">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date-chip">11/2025 – 07/2026</span>
+                                <h3>Full Stack Flutter & Django Development</h3>
+                                <h4>Techno Dot Academy of R&D&I <span class="loc-text">• Malappuram</span></h4>
+                                <p class="timeline-desc">
+                                    Comprehensive professional immersion covering Flutter app development, Dart programming, state management, Django backend architecture, and relational database systems.
+                                </p>
+                                <div class="timeline-cert-tag">
+                                    <i class="fas fa-certificate"></i> Certified • ID: 1604334349MV
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card">
+                                <span class="timeline-date-chip">10/2022 – 04/2025</span>
+                                <h3>Bachelor of Commerce (Computer Applications)</h3>
+                                <h4>University of Calicut <span class="loc-text">• Malappuram</span></h4>
+                                <p class="timeline-desc">
+                                    Rigorous academic foundation in software applications, data systems, analytical problem solving, and computational commerce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications section-padding" id="certifications">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-tag">Verified Credentials</span>
+                <h2 class="section-title">Official Certifications</h2>
+                <p class="section-subtitle">Validated proof of expertise in cross-platform mobile development.</p>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="cert-card glass-card fade-in-up delay-1">
+                    <div class="cert-img-wrapper" id="openCertModal">
+                        <img src="flutter_certificate.png" alt="Flutter App Development Certificate - Techno Dot Academy" class="cert-thumbnail">
+                        <div class="cert-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to Expand Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <div class="cert-badge">
+                            <i class="fas fa-check-circle"></i> Officially Verified Credential
+                        </div>
+                        <h3 class="cert-name">Flutter App Development</h3>
+                        <h4 class="cert-issuer">
+                            <i class="fas fa-award"></i> Techno Dot Academy of R&D&I
+                        </h4>
+                        <div class="cert-info-list">
+                            <div class="cert-info-item">
+                                <i class="fas fa-fingerprint"></i>
+                                <span>Credential ID: <strong>1604334349MV</strong></span>
+                            </div>
+                            <div class="cert-info-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>Course Duration: Nov 19, 2025 – Jul 31, 2026</span>
+                            </div>
+                            <div class="cert-info-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Issue Date: September 20, 2026</span>
+                            </div>
+                            <div class="cert-info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kinfra Techno Industrial Park, Kakkanchery, Kerala</span>
+                            </div>
+                        </div>
+                        <p class="cert-desc">
+                            Completed intensive training and practical competency in Flutter cross-platform mobile development, covering Dart programming, reactive UI paradigms, state management, REST API integration, and production application architecture.
+                        </p>
+                        <div class="cert-actions">
+                            <button class="btn btn-primary btn-sm" id="viewCertBtn">
+                                <i class="fas fa-expand"></i> View Full Preview
+                            </button>
+                            <a href="flutter_certificate.pdf" target="_blank" download="Mohammed_Munaver_Flutter_Certificate.pdf" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currently Learning Section -->
+    <section class="learning section-padding">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-tag">Continuous Growth</span>
+                <h2 class="section-title">Currently Exploring & Expanding</h2>
+                <p class="section-subtitle">Deepening engineering capabilities with advanced industry practices.</p>
+            </div>
+
+            <div class="learning-grid glass-card fade-in-up delay-1">
+                <div class="learning-item">
+                    <svg class="flutter-svg" viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#54c5f8" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37z"/>
+                        <path fill="#29b6f6" d="M14.328 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.372z"/>
+                        <path fill="#02569b" d="M14.328 11.072l3.23 3.234-3.23 3.235-3.23-3.235 3.23-3.234z"/>
+                    </svg>
+                    Advanced Flutter Performance
+                </div>
+                <div class="learning-item"><i class="fas fa-sitemap"></i> BLoC & Riverpod Architecture</div>
+                <div class="learning-item"><i class="fas fa-network-wired"></i> High-Throughput REST APIs</div>
+                <div class="learning-item"><i class="fab fa-python"></i> Django Asynchronous Views</div>
+                <div class="learning-item"><i class="fas fa-database"></i> PostgreSQL Query Optimization</div>
+                <div class="learning-item"><i class="fas fa-cubes"></i> Domain-Driven Clean Architecture</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind or an exciting role to discuss? Reach out anytime!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info Card -->
+                <div class="contact-card glass-card fade-in-up delay-1">
+                    <h3>Contact Information</h3>
+                    <p class="contact-subtext">Feel free to call, email, or connect via professional platforms.</p>
+                    
+                    <div class="contact-list">
+                        <!-- Email Item with Copy Button -->
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-item-info">
+                                <h4>Email</h4>
+                                <a href="mailto:munavervpofficial@gmail.com" class="contact-link">munavervpofficial@gmail.com</a>
+                            </div>
+                            <button class="copy-btn" data-copy="munavervpofficial@gmail.com" title="Copy Email" aria-label="Copy Email">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Phone Item with Copy Button -->
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-item-info">
+                                <h4>Phone</h4>
+                                <a href="tel:+918075650229" class="contact-link">+91 8075650229</a>
+                            </div>
+                            <button class="copy-btn" data-copy="+918075650229" title="Copy Phone" aria-label="Copy Phone">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Location Item -->
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-item-info">
+                                <h4>Location</h4>
+                                <p>Malappuram, Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Channels -->
+                    <div class="contact-socials">
+                        <h4>Find Me Online</h4>
+                        <div class="social-btn-group">
+                            <a href="https://github.com/munaver-loq" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohammedmunavervp" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:munavervpofficial@gmail.com" class="social-btn" title="Send Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resume-cta-box">
+                        <a href="resume.pdf" download="Munaver_Resume.pdf" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download Full Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Message Form -->
+                <div class="contact-form-card glass-card fade-in-up delay-2">
+                    <h3>Send a Quick Message</h3>
+                    <p class="contact-subtext">Send an inquiry directly and I'll get back to you promptly.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="senderName"><i class="fas fa-user"></i> Your Name</label>
+                            <input type="text" id="senderName" class="form-control" placeholder="e.g. John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senderEmail"><i class="fas fa-envelope"></i> Your Email</label>
+                            <input type="email" id="senderEmail" class="form-control" placeholder="e.g. john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageSubject"><i class="fas fa-tag"></i> Subject</label>
+                            <input type="text" id="messageSubject" class="form-control" placeholder="e.g. Flutter Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageBody"><i class="fas fa-comment-dots"></i> Message</label>
+                            <textarea id="messageBody" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBtn">
+                            <span><i class="fas fa-paper-plane"></i> Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-code">&lt;</span>Munaver<span class="logo-dot">.</span><span class="logo-code">/&gt;</span>
+                </a>
+                <p>Crafting performant cross-platform mobile experiences with Flutter & modern backends.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mohammed Munaver V P. All rights reserved.</p>
+                <p class="built-with">Engineered with Clean HTML, Modern CSS & Vanilla JS <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back-to-Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Copy Toast Notification Popup -->
+    <div id="toastNotification" class="toast-notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- Certificate Lightbox Modal -->
+    <div id="certModal" class="cert-modal">
+        <div class="cert-modal-backdrop"></div>
+        <div class="cert-modal-content glass-card">
+            <button class="cert-modal-close" aria-label="Close modal">&times;</button>
+            <div class="cert-modal-header">
+                <h3>Flutter App Development - Certificate of Completion</h3>
+                <p>Techno Dot Academy of R&D&I • Credential ID: 1604334349MV</p>
+            </div>
+            <div class="cert-modal-body">
+                <img src="flutter_certificate.png" alt="Flutter App Development Certificate" class="cert-modal-img">
+            </div>
+            <div class="cert-modal-footer">
+                <a href="flutter_certificate.pdf" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Full PDF</a>
+                <a href="flutter_certificate.pdf" download="Munaver_Flutter_Certificate.pdf" class="btn btn-secondary btn-sm"><i class="fas fa-download"></i> Download PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
